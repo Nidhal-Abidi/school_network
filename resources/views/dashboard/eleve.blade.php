@@ -1,4 +1,17 @@
-<?php 
-  echo 'Je suis un '.$LoggedUserInfo['TYPE_COMPTE'].' et mon Login = '.$LoggedUserInfo['LOGIN'];
+  @extends('../navigation')
+  @section('title','Dashboard')
+  @section('header')
+  <?php 
+  echo 'Welcome '.$LoggedUserInfo['NOM'].'  !';
   ?>
-  <a href="/auth/logout">LogOut</a>
+  @endsection
+
+  @section('main_content')
+
+  <p>Here we'll have a Timetable + other infos maybe !</p>
+
+  @endsection()
+
+  @section('nav')
+  <li><a href="/dashboard/eleve"><i class="fas fa-home"></i>Dashboard</a></li>
+  @endsection
