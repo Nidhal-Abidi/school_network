@@ -12,6 +12,10 @@
 
 @endsection()
 
-@section('nav')
+@section('nav_dashboard')
 <li><a href="/teacher/index"><i class="fas fa-home"></i>Dashboard</a></li>
+@endsection
+
+@section('nav_profile')
+<li><a href="/teacher/profile"><i class="fas fa-user"></i>Profile</a></li>
 @endsection

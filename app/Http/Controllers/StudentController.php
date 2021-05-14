@@ -12,4 +12,10 @@ class StudentController extends Controller
         $data = ['LoggedUserInfo'=>$arr];
         return view('/student/index',$data);
     }
+
+    public function profile(){
+        $arr=Compte::where('LOGIN','=', session('LoggedUser'))->first();
+        $data = ['LoggedUserInfo'=>$arr];
+        return view('/student/profile',$data);
+    }
 }

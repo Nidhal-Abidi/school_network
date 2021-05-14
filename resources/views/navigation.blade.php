@@ -4,16 +4,17 @@
 	<meta charset="UTF-8">
 	<title>@yield('title')</title>
 	<link rel="stylesheet" href="{{ url('./css/navigationCSS.css') }}">
+    @yield('profilecss_link')
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 <body>
 
-<div class="wrapper">
+<div class="wrappernav">
     <div class="sidebar">
         <h2>School Network</h2>
         <ul>
-            @yield('nav')
-            <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
+            @yield('nav_dashboard')
+            @yield('nav_profile')
             <li><a href="#"><i class="fas fa-address-card"></i>#</a></li>
             <li><a href="#"><i class="fas fa-project-diagram"></i>#</a></li>
             <li><a href="#"><i class="fas fa-blog"></i>#</a></li>

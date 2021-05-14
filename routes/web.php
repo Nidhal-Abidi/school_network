@@ -26,4 +26,9 @@ Route::group(['middleware'=>['AuthCheck']],function(){
   Route::get('/parent/index','\App\Http\Controllers\ParentController@index');
   Route::get('/teacher/index','\App\Http\Controllers\TeacherController@index');
   Route::get('/staff/index','\App\Http\Controllers\StaffController@index');
+
+  Route::get('/parent/profile','\App\Http\Controllers\ParentController@profile');
+  Route::get('/staff/profile','\App\Http\Controllers\StaffController@profile');
+  Route::get('/student/profile','\App\Http\Controllers\StudentController@profile');
+  Route::get('/teacher/profile','\App\Http\Controllers\TeacherController@profile');
 });

@@ -12,4 +12,9 @@ class TeacherController extends Controller
         $data = ['LoggedUserInfo'=>$arr];
         return view('/teacher/index',$data);
     }
+    public function profile(){
+        $arr=Compte::where('LOGIN','=', session('LoggedUser'))->first();
+        $data = ['LoggedUserInfo'=>$arr];
+        return view('/teacher/profile',$data);
+    }
 }

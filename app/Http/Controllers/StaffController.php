@@ -12,4 +12,10 @@ class StaffController extends Controller
         $data = ['LoggedUserInfo'=>$arr];
         return view('/staff/index',$data);
     }
+
+    public function profile(){
+        $arr=Compte::where('LOGIN','=', session('LoggedUser'))->first();
+        $data = ['LoggedUserInfo'=>$arr];
+        return view('/staff/profile',$data);
+    }
 }
