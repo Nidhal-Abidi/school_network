@@ -50,9 +50,9 @@
             </div>
           </div>
       </div>
-    <div class="projects">
-          <h3>Other</h3>
-          <div class="projects_data">
+          <div class="projects">
+            <h3>Other</h3>
+              <div class="projects_data">
                 <div class="data">
                   <h4>Phone Number</h4>
                   <p><?php echo $LoggedUserInfo['NUMTEL']; ?></p>
@@ -61,8 +61,13 @@
                  <h4>Enrolled Child Login</h4>
                   <p><?php echo $LoggedUserInfo['LOGINELEVE']; ?></p>
                 </div>   
-          </div>
-      </div> 
+              </div>
+          </div> 
+      <div class="social_media">
+          <ul>
+            <li><a href="/parent/profileupdate">Update Info!</a></li>
+          </ul>
+      </div>
     </div>
   </div>
 @endsection()

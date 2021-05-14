@@ -63,6 +63,11 @@
                 </div>   
           </div>
       </div> 
+      <div class="social_media">
+        <ul>
+          <li><a href="/staff/profileupdate">Update Info!</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 @endsection()

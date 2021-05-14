@@ -16,7 +16,7 @@ body{
   left: 700px;
   transform: translate(-50%,-50%);
   width: 900px;
-  height: 400px;
+  height: 450px;
   display: flex;
   box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
 }
@@ -91,4 +91,22 @@ body{
   color: #919aa3;
 }
 
-  
+.wrapper .social_media ul{
+  display: flex;
+}
+
+.wrapper .social_media ul li{
+  width: 120px;
+  height: 45px;
+  background: linear-gradient(to right,#6f6894,#4b4276);
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.wrapper .social_media ul li a{
+  color :#fff;
+  display: block;
+  font-size: 18px;
+}
