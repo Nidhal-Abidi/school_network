@@ -17,3 +17,7 @@
 @section('nav_profile')
 <li><a href="/parent/profile"><i class="fas fa-user"></i>Profile</a></li>
 @endsection
+
+@section('nav_news')
+<li><a href="/parent/news"><i class="fas fa-newspaper"></i>News</a></li>  
+@endsection

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Compte;
+use App\Models\Actualite;
 
 class StaffController extends Controller
 {
@@ -53,8 +54,12 @@ class StaffController extends Controller
         ]);
         
         $var->save();
-        //dd($var);
         return redirect('/staff/profile');
     }
 
+    public function showNews(){
+        $actualite= Actualite::all();
+        
+        return view ('/staff/shownews',['actualite'=>$actualite]);
+    }
 }

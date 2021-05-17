@@ -47,5 +47,10 @@
 @endsection
 
 
+@section('nav_news')
+<li><a href="/student/news"><i class="fas fa-newspaper"></i>News</a></li>  
+@endsection
+
+ 
 
  

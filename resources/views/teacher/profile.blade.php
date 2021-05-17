@@ -80,6 +80,6 @@
 <li><a href="/teacher/profile"><i class="fas fa-user"></i>Profile</a></li>
 @endsection
 
-
-
- 
+@section('nav_news')
+<li><a href="/teacher/news"><i class="fas fa-newspaper"></i>News</a></li>  
+@endsection

@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Compte;
+use App\Models\Actualite;
+use App\Models\ActualiteFiliere;
+use App\Models\ActualiteNiveau;
 
 class StudentController extends Controller
 {
@@ -55,5 +58,31 @@ class StudentController extends Controller
         $var->save();
         //dd($var);
         return redirect('/student/profile');
+    }
+
+    public function shownews(){
+        $eleve=Compte::findOrFail(session('LoggedUser'));
+        
+        $act=Compte::join('actualiteniveau','actualiteniveau.NIVEAU','=','compte.NIVEAU')
+        ->select('actualiteniveau.IDACT')    
+        ->distinct()        
+        //->where('actualiteniveau.IDFILIERE','compte.IDFILIERE')
+        ->where('compte.LOGIN','=',$eleve->LOGIN)
+        ->get();
+
+        //dd($act);
+        $idActEleve=array();
+        $chaineIdActEleve="";
+        if(! empty($act)){
+            foreach ($act as $key) {    
+                array_push($idActEleve,$key->IDACT);
+            }
+            $chaineIdActEleve=implode("','",$idActEleve);
+        }
+        /*$chaineIdActEleve => afin de former une chaine qu'on peut utiliser dans la req SQL*/ 
+        $chaineIdActEleve="('".$chaineIdActEleve."')";
+        $actualite=\DB::select("select * from actualite where IDACT in $chaineIdActEleve;");
+        //dd($actualite);
+        return view ('/student/shownews',['actualite'=>$actualite]);
     }
 }

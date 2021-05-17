@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Compte;
+use App\Models\Actualite;
 
 class ParentController extends Controller
 {
@@ -52,7 +53,12 @@ class ParentController extends Controller
         ]);
         
         $var->save();
-        //dd($var);
         return redirect('/parent/profile');
+    }
+
+    public function showNews(){
+        $actualite= Actualite::all();
+        
+        return view ('/parent/shownews',['actualite'=>$actualite]);
     }
 }

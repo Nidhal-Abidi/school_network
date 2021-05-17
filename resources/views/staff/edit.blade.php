@@ -46,6 +46,8 @@
 <li><a href="/staff/profile"><i class="fas fa-user"></i>Profile</a></li>
 @endsection
 
-
+@section('nav_news')
+<li><a href="/staff/news"><i class="fas fa-newspaper"></i>News</a></li>  
+@endsection
 
  
