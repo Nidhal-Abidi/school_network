@@ -11,4 +11,5 @@ class ActualiteNiveau extends Model
     protected $table='actualiteniveau';
     protected $primaryKey='IDACT';
     public $incrementing =false ;
+    public $timestamps=false;
 }

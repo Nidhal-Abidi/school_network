@@ -11,4 +11,5 @@ class ActualiteFiliere extends Model
     protected $table='actualitefiliere';
     protected $primaryKey='IDACT';
     public $incrementing =false ;
+    public $timestamps=false;
 }

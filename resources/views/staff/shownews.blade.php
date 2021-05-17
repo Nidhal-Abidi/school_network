@@ -12,6 +12,12 @@
 @section('main_content')
 
 <?php
+
+echo '<a href="/staff/news/create"><button type="button" class="btn btn-primary">Create News</button></a>
+      <a href="/staff/news/update"><button type="button" class="btn btn-primary">Update News</button></a>
+      <a href="/staff/news/delete"><button type="button" class="btn btn-primary">Delete News</button></a>
+      <br><br>';
+
 $numbers=['One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten'];
 echo '<div class="container"><div id="accordion">';
 $i=0;

@@ -11,7 +11,7 @@ class Actualite extends Model
     protected $table='actualite';
     protected $primaryKey='IDACT';
     public $incrementing =false ;
-
+    public $timestamps=false;
     /**
     * The roles that belong to the Actualite
     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
