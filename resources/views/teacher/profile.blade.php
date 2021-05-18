@@ -83,3 +83,8 @@
 @section('nav_news')
 <li><a href="/teacher/news"><i class="fas fa-newspaper"></i>News</a></li>  
 @endsection
+
+@section('nav_attendance')
+<li><a href="/teacher/chooseclass"><i class="fas fa-address-book"></i>Attendance</a></li>
+@endsection
+ 

@@ -16,10 +16,11 @@
         <ul>
             @yield('nav_dashboard')
             @yield('nav_profile')
-            @yield('nav_news')       
+            @yield('nav_news')  
+            @yield('nav_attendance')     
             <li><a href="#"><i class="fas fa-project-diagram"></i>#</a></li>
             <li><a href="#"><i class="fas fa-blog"></i>#</a></li>
-            <li><a href="#"><i class="fas fa-address-book"></i>#</a></li>
+            
             <li><a href="#"><i class="fas fa-map-pin"></i>#</a></li>
             <li><a href="/auth/logout"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>
         </ul> 

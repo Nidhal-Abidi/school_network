@@ -47,3 +47,8 @@ echo '</div></div>';
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 @endsection
+
+@section('nav_attendance')
+<li><a href="/teacher/chooseclass"><i class="fas fa-address-book"></i>Attendance</a></li>
+@endsection
+ 
