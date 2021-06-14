@@ -43,6 +43,10 @@ echo '</div></div>';
 <li><a href="/parent/news"><i class="fas fa-newspaper"></i>News</a></li>  
 @endsection
 
+@section('nav_msg')
+<li><a href="/parent/msg" style="text-decoration: none"><i class="fas fa-comments"></i>Messaging</a></li>
+@endsection
+
 @section('scriptsJS')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

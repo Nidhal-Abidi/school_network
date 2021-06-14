@@ -84,4 +84,6 @@
 <li><a href="/parent/news"><i class="fas fa-newspaper"></i>News</a></li>  
 @endsection
 
- 
+@section('nav_msg')
+<li><a href="/parent/msg" style="text-decoration: none"><i class="fas fa-comments"></i>Messaging</a></li>
+@endsection

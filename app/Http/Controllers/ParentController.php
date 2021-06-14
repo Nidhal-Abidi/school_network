@@ -61,4 +61,8 @@ class ParentController extends Controller
         
         return view ('/parent/shownews',['actualite'=>$actualite]);
     }
+
+    public function messaging(){
+        return view ('/parent/messaging');
+    }
 }
