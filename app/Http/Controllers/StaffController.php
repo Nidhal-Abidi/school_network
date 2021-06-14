@@ -170,4 +170,8 @@ class StaffController extends Controller
             return redirect('/staff/news');
         }
     }
+
+    public function viewTimeTable(){
+        return view('/staff/viewTimeTable');
+    }
 }

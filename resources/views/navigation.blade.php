@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>@yield('title')</title>
+    @yield('bootstrap')
 	<link rel="stylesheet" href="{{ url('./css/navigationCSS.css') }}">
     @yield('profilecss_link')
-    @yield('bootstrap')
+    
+    <link rel="stylesheet" href="{{ url('./css/timetableCSS.css') }}">
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 <body>

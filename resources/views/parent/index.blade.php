@@ -7,7 +7,7 @@
 @endsection
 
 @section('main_content')
-<p>Here we'll have a Timetable + other infos maybe !</p>
+@include('../timetable')
 @endsection()
 
 @section('nav_dashboard')

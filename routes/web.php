@@ -62,4 +62,7 @@ Route::group(['middleware'=>['AuthCheck']],function(){
   Route::post('/teacher/studentattendance','\App\Http\Controllers\TeacherController@showStudents');
   Route::post('/teacher/saveabsentstudents','\App\Http\Controllers\TeacherController@saveAbsentStudents');
 
+  Route::post('/staff/viewTimeTable','\App\Http\Controllers\StaffController@viewTimeTable');
+
+
 });

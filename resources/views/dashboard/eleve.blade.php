@@ -8,7 +8,7 @@
 
   @section('main_content')
 
-  <p>rzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+  
   
   @endsection()
 
