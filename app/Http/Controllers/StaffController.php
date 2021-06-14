@@ -159,7 +159,7 @@ class StaffController extends Controller
         $actExists=Actualite::where('CATEGORIE','=',$data['categorie'])->get();
         
         if($actExists->isEmpty()){
-            return back()->with('fail','Categorie doesn\'t exist !!');
+            return redirect('/staff/news/delete')->with('fail','Categorie doesn\'t exist !!');
         } 
         else{
             $actualite=Actualite::where('CATEGORIE','=',$data['categorie'])->first();

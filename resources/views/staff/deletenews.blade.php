@@ -20,7 +20,7 @@
     @endif
 
     <div class="form-group">
-      <label for="categorie">Enter the Categorie of the news that you want to Delete :</label>
+      <label for="categorie">Enter the Category of the news that you want to Delete :</label>
       <input type="text" class="form-control" id="categorie" name="categorie" value="{{ old('categorie') }}">
       @error('categorie') <span style="color: red"> {{ $message }} </span> @enderror
     </div>

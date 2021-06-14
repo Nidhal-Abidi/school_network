@@ -55,7 +55,7 @@ Route::group(['middleware'=>['AuthCheck']],function(){
   Route::get('/staff/news/update','\App\Http\Controllers\StaffController@updateNews');
   Route::post('/staff/news/saveupdatednews','\App\Http\Controllers\StaffController@saveUpdatedNews');
   
-  Route::post('/staff/news/delete','\App\Http\Controllers\StaffController@deleteNews');
+  Route::get('/staff/news/delete','\App\Http\Controllers\StaffController@deleteNews');
   Route::post('/staff/news/savedeletion','\App\Http\Controllers\StaffController@saveDeletion');
 
   Route::get('/teacher/chooseclass','\App\Http\Controllers\TeacherController@chooseClass');

@@ -8,8 +8,8 @@
 
   @section('main_content')
 
-  <p>Here we'll have a Timetable + other infos maybe !</p>
-
+  <p>rzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+  
   @endsection()
 
   @section('nav')

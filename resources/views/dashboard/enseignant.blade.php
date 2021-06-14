@@ -8,7 +8,7 @@ echo 'Welcome '.$LoggedUserInfo['NOM'].'  !';
 
 @section('main_content')
 
-<p>Here we'll have a Timetable + other infos maybe !</p>
+<p>Here we'll have a dverfrefcble + other infos maybe !</p>
 
 @endsection()
 @section('nav')
