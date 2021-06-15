@@ -164,4 +164,8 @@ class TeacherController extends Controller
 
 
     }
+
+    public function messaging(){
+        return view('/teacher/messaging');
+    }
 }

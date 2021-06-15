@@ -174,4 +174,8 @@ class StaffController extends Controller
     public function viewTimeTable(){
         return view('/staff/viewTimeTable');
     }
+
+    public function messaging(){
+        return view('/staff/messaging');
+    }
 }

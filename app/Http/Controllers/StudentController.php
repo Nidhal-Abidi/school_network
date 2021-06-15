@@ -85,4 +85,8 @@ class StudentController extends Controller
         //dd($actualite);
         return view ('/student/shownews',['actualite'=>$actualite]);
     }
+
+    public function messaging(){
+        return view('student/messaging');
+    }
 }

@@ -22,10 +22,7 @@
             @yield('nav_news')  
             @yield('nav_attendance')    
             @yield('nav_msg') 
-            
-            <li><a href="#"><i class="fas fa-blog"></i>#</a></li>
-            
-            <li><a href="#"><i class="fas fa-map-pin"></i>#</a></li>
+          
             <li><a href="/auth/logout" style="text-decoration: none"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>
         </ul> 
         

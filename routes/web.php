@@ -65,6 +65,9 @@ Route::group(['middleware'=>['AuthCheck']],function(){
   Route::post('/staff/viewTimeTable','\App\Http\Controllers\StaffController@viewTimeTable');
 
   Route::get('/parent/msg','\App\Http\Controllers\ParentController@messaging');
+  Route::get('/staff/msg','\App\Http\Controllers\StaffController@messaging');
+  Route::get('/student/msg','\App\Http\Controllers\StudentController@messaging');
+  Route::get('/teacher/msg','\App\Http\Controllers\TeacherController@messaging');
 
 
 

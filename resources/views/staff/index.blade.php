@@ -15,7 +15,7 @@
   <center>
     <table>
       <tr>
-        <td><label for="emploi" style="font-size: 24px">Consulting the time table:</label><br></td>
+        <td><label for="emploi" style="font-size: 24px">Consulting a time table:</label><br></td>
       </tr>
       <tr>
         <td>
@@ -54,7 +54,7 @@
           </select>
         </td>
         <td>
-          <button type="submit" class="btn btn-primary" style="background-color: SlateBlue" href="">Show</button>
+          <button type="submit" class="btn btn-primary btn-lg" style="background-color: SlateBlue" href="">Show</button>
         </form>
 
         </td>
@@ -68,13 +68,17 @@
 @endsection()
 
 @section('nav_dashboard')
-<li><a href="/staff/index"><i class="fas fa-home"></i>Dashboard</a></li>
+<li><a href="/staff/index" style="text-decoration: none"><i class="fas fa-home"></i>Dashboard</a></li>
 @endsection
 
 @section('nav_profile')
-<li><a href="/staff/profile"><i class="fas fa-user"></i>Profile</a></li>
+<li><a href="/staff/profile" style="text-decoration: none"><i class="fas fa-user"></i>Profile</a></li>
 @endsection
 
 @section('nav_news')
-<li><a href="/staff/news"><i class="fas fa-newspaper"></i>News</a></li>  
+<li><a href="/staff/news" style="text-decoration: none"><i class="fas fa-newspaper"></i>News</a></li>  
+@endsection
+
+@section('nav_msg')
+<li><a href="/staff/msg" style="text-decoration: none"><i class="fas fa-comments"></i>Messaging</a></li>
 @endsection
