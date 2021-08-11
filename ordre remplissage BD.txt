@@ -1,0 +1,27 @@
+ordre de remlissage des tables dans BD : 
+1)FILIERE;(0) *
+2)MATIERE;(0) *
+3)ACTUALITE;(0) *
+4)NOTIFICATION;(0) *
+5)NIVEAU;(1) (depend Filiere ) 
+6)CLASSE;(1) (depend niveau )
+7)EMPLOI_DU_TEMPS;(1) (depend classe )
+8)ACTUALITEFILIERE;(2)(depend actualite + filiere )
+9)ACTUALITENIVEAU;(2)( depend actualite + niveau )
+10)COMPTE;(2) (depend compte+classe ) ie depend compte ssi typecompte=parent =>eleve doit etre cree avant parent  
+11)MATIERENIVEAU;(2) (depend niveau + matiere )
+12)SEANCE;(3) (depend emploi_du_temps+matiere+compte)
+13)ABSENCERETARDELEVE;(2) (depend compte+seance)
+14)MESSAGE;(2)(depend de compte+compte) car il y a sender/receiver qui sont les 2 comptes
+15)RECEVOIR;(2)(depend notification+compte)
+16)MATIERESCLASSE;(3)(depend matiere+classe+compte)
+
+RQ lors de remplissage des tableaux : 
+1)Table Compte : =>eleve doit etre creer avant parent 
+=> colonne type_compte doit avoir l'un de ces valeurs: parent,eleve,personnel,enseignant
+=>loginEleve : contient tjrs null sauf le cas ou type_compte=parent
+=>colonne gender contient : masculin,feminin
+2)Table Filiere: colonne idFiliere doit avoir l'un de ces valeurs : math,science,info,general,eco_gestion,lettres,technique
+3)Table emploi_du_temps : colonne num_sem est un entier entre 1 et 52
+4)Table seance : =>colonne raison_annulation : prof_absent,greve,risque_sanitaire,risque_environnemental
+5)Table absenceRetardEleve : =>colonne nature : R , A (R : retard / A :absent )

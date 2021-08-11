@@ -1,0 +1,220 @@
+insert into  Filiere values ('math');
+insert into  Filiere values ('science');
+insert into  Filiere values ('info');
+insert into  Filiere values ('general');
+insert into  Filiere values ('eco_gestion');
+insert into  Filiere values ('lettres');
+insert into  Filiere values ('technique');
+***************************************
+insert into  matiere values (0,'math');
+insert into  matiere values (1,'physique');
+insert into  matiere values (2,'science');
+insert into  matiere values (3,'info');
+insert into  matiere values (4,'mecanique');
+insert into  matiere values (5,'electrique');
+insert into  matiere values (6,'philosophie');
+insert into  matiere values (7,'gestion');
+insert into  matiere values (8,'economie');
+insert into  matiere values (9,'fr');
+insert into  matiere values (10,'anglais');
+**************************************
+insert into  actualite values (0,'reglement_interne','bonjour tous les eleves , A partir d aujourd hui le port du tablier est obligatoire','2021-05-18','2021-05-18');
+insert into  actualite values (1,'ouverture_club','bonjour tous les eleves , On veur vous informer que le club de theatre est dés aujourdhui ouvert pour tous .Veuillez aller vers la salle de theatre pour s inscrire.','2021-04-21','2021-04-21');
+insert into  actualite values (2,'categorie','Bonjour , 
+ici cest le corps de lactualite .','2021-05-17','2021-05-17');
+***************************************
+insert into notification values(0,'observ','Bonjour,Je veux vous informer que votre fils ne se concentre pas dans la classe et en plus il bavarde avec ces amis .','2021-02-11','2021-02-11');
+
+insert into notification values(1,'observ','Bonjour,Je veux vous informer que vous devez venir à l école car j ai quelques observations à propos de votre enfant ','2021-03-1','2021-03-1');
+
+******************************************
+insert into  niveau values('general',1);
+insert into  niveau values('science',2);
+insert into  niveau values('info',2);
+insert into  niveau values('lettres',2);
+insert into  niveau values('eco_gestion',2);
+insert into  niveau values('science',3);
+insert into  niveau values('info',3);
+insert into niveau values('lettres',3);
+insert into niveau values('eco_gestion',3);
+insert into niveau values('math',3);
+insert into niveau values('technique',3);
+insert into niveau values('science',4);
+insert into niveau values('info',4);
+insert into niveau values('lettres',4);
+insert into niveau values('eco_gestion',4);
+insert into niveau values('math',4);
+insert into niveau values('technique',4);
+****************************************
+insert into classe values ('general',1,'1s1');
+insert into classe values ('general',1,'1s2');
+insert into classe values ('general',1,'1s3');
+
+insert into classe values ('science',2,'2sc1');
+insert into classe values ('science',2,'2sc2');
+insert into classe values ('info',2,'2inf1');
+insert into classe values ('info',2,'2inf2');
+insert into classe values ('lettres',2,'2l1');
+insert into classe values ('lettres',2,'2l2');
+insert into classe values ('eco_gestion',2,'2e1');
+insert into classe values ('eco_gestion',2,'2e2');
+insert into classe values ('science',3,'3sc1');
+insert into classe values ('science',3,'3sc2');
+insert into classe values ('info',3,'3inf1');
+insert into classe values ('info',3,'3inf2');
+insert into classe values ('lettres',3,'3l1');
+insert into classe values ('lettres',3,'3l2');
+insert into classe values ('eco_gestion',3,'3e1');
+insert into classe values ('eco_gestion',3,'3e2');
+insert into classe values ('math',3,'3m1');
+insert into classe values ('math',3,'3m2');
+insert into classe values ('technique',3,'3t1');
+insert into classe values ('technique',3,'3t2');
+insert into classe values ('science',4,'4sc1');
+insert into classe values ('science',4,'4sc2');
+insert into classe values ('info',4,'4inf1');
+insert into classe values ('info',4,'4inf2');
+insert into classe values ('lettres',4,'4l1');
+insert into classe values ('lettres',4,'4l2');
+insert into classe values ('eco_gestion',4,'4e1');
+insert into classe values ('eco_gestion',4,'4e2');
+insert into classe values ('math',4,'4m1');
+insert into classe values ('math',4,'4m2');
+insert into classe values ('technique',4,'4t1');
+insert into classe values ('technique',4,'4t2');
+************************************
+insert into emploi_du_temps values('general',1,'1s1','2020-09-14',1);
+insert into emploi_du_temps values('general',1,'1s2','2020-09-14',1);
+insert into emploi_du_temps values('science',2,'2sc1','2020-09-14',1);
+insert into emploi_du_temps values('science',2,'2sc2','2020-09-14',1);
+insert into emploi_du_temps values('lettres',2,'2l1','2020-09-14',1);
+insert into emploi_du_temps values('lettres',2,'2l2','2020-09-14',1);
+insert into emploi_du_temps values('info',2,'2inf1','2020-09-14',1);
+insert into emploi_du_temps values('info',2,'2inf2','2020-09-14',1);
+insert into emploi_du_temps values('eco_gestion',2,'2e1','2020-09-14',1);
+insert into emploi_du_temps values('eco_gestion',2,'2e2','2020-09-14',1);
+
+insert into emploi_du_temps values('science',3,'3sc1','2020-09-14',1);
+insert into emploi_du_temps values('science',3,'3sc2','2020-09-14',1);
+insert into emploi_du_temps values('lettres',3,'3l1','2020-09-14',1);
+insert into emploi_du_temps values('lettres',3,'3l2','2020-09-14',1);
+insert into emploi_du_temps values('info',3,'3inf1','2020-09-14',1);
+insert into emploi_du_temps values('info',3,'3inf2','2020-09-14',1);
+insert into emploi_du_temps values('eco_gestion',3,'3e1','2020-09-14',1);
+insert into emploi_du_temps values('eco_gestion',3,'3e2','2020-09-14',1);
+insert into emploi_du_temps values('math',3,'3m1','2020-09-14',1);
+insert into emploi_du_temps values('math',3,'3m2','2020-09-14',1);
+insert into emploi_du_temps values('technique',3,'3t1','2020-09-14',1);
+insert into emploi_du_temps values('technique',3,'3t2','2020-09-14',1);
+
+insert into emploi_du_temps values('science',4,'4sc1','2020-09-14',1);
+insert into emploi_du_temps values('science',4,'4sc2','2020-09-14',1);
+insert into emploi_du_temps values('lettres',4,'4l1','2020-09-14',1);
+insert into emploi_du_temps values('lettres',4,'4l2','2020-09-14',1);
+insert into emploi_du_temps values('info',4,'4inf1','2020-09-14',1);
+insert into emploi_du_temps values('info',4,'4inf2','2020-09-14',1);
+insert into emploi_du_temps values('eco_gestion',4,'4e1','2020-09-14',1);
+insert into emploi_du_temps values('eco_gestion',4,'4e2','2020-09-14',1);
+insert into emploi_du_temps values('math',4,'4m1','2020-09-14',1);
+insert into emploi_du_temps values('math',4,'4m2','2020-09-14',1);
+insert into emploi_du_temps values('technique',4,'4t1','2020-09-14',1);
+insert into emploi_du_temps values('technique',4,'4t2','2020-09-14',1);
+*****************************************************
+insert into actualiteFiliere values (0,'general');
+insert into actualiteFiliere values (0,'math');
+insert into actualiteFiliere values (0,'science');
+insert into actualiteFiliere values (0,'info');
+insert into actualiteFiliere values (0,'lettres');
+insert into actualiteFiliere values (0,'eco_gestion');
+insert into actualiteFiliere values (0,'technique');
+insert into actualiteFiliere values (1,'general');
+insert into actualiteFiliere values (1,'lettres');
+insert into actualiteFiliere values (1,'eco_gestion');
+******************************************
+
+insert into ACTUALITENIVEAU values(0,'general',1);
+insert into ACTUALITENIVEAU values(0,'science',2);
+insert into ACTUALITENIVEAU values(0,'lettres',2);
+insert into ACTUALITENIVEAU values(0,'info',2);
+insert into ACTUALITENIVEAU values(0,'eco_gestion',2);
+insert into ACTUALITENIVEAU values(1,'science',3);
+insert into ACTUALITENIVEAU values(1,'lettres',3);
+insert into ACTUALITENIVEAU values(1,'info',3);
+insert into ACTUALITENIVEAU values(1,'eco_gestion',3);
+insert into ACTUALITENIVEAU values(1,'math',3);
+insert into ACTUALITENIVEAU values(1,'technique',3);
+insert into ACTUALITENIVEAU values(1,'general',1);
+insert into ACTUALITENIVEAU values(2,'general',1);
+
+****************************************
+
+insert into compte values('Imran123',null,null,null,null,'Imran','Abdallah',99999999,'imran@gmail.com','masculin','imranabdallah123','1970-05-1',false,'enseignant',null,'math');
+insert into compte values('ansari123',null,null,null,null,'Ansari','Layla',98888888,'layla@gmail.com','feminin','ansarilayla123','1975-10-8',false,'enseignant',null,'info');
+
+insert into compte values('abbadi123',null,null,null,null,'Abbadi','Amina',97777777,'amina@gmail.com','feminin','abbadiamina123','1980-12-18',false,'personnel','scolarite',null);
+insert into compte values('riahi123',null,null,null,null,'Riahi','Tareq',96666666,'riahi@gmail.com','masculin','riahitareq123','1982-08-15',false,'personnel','scolarite',null);
+
+
+insert into compte values('labidi000',null,'general',1,'1s1','Labidi','Nidhal',95565421,'labidinidhal@gmail.com','masculin','00000','2005-10-12',false,'eleve',null,null);
+insert into compte values('eleve2',null,'general',1,'1s1','Nom','Prenom',99999999,'test@gmail.com','masculin','00000','2006-10-12',false,'eleve',null,null);
+
+insert into compte values('ghliss111',null,'science',2,'2sc1','Ghliss','Khairane',26587421,'ghlisskhairane@gmail.com','masculin','ghlisskhairane111','2001-11-01',false,'eleve',null,null);
+
+insert into compte values('labidi153','labidi000',null,null,null,'Labidi','Bilel',53333333,'labidibilel@gmail.com','masculin','00000','1960-01-01',false,'parent',null,null);
+insert into compte values('labidi95','labidi000',null,null,null,'Labidi','Radhia',53333333,'labidiradhia@gmail.com','feminin','00000','1965-02-21',false,'parent',null,null);
+insert into compte values('ghliss99','ghliss111',null,null,null,'Ghliss','Rami',93633533,'ghlissrami@gmail.com','masculin','00000','1969-12-12',false,'parent',null,null);
+insert into compte values('ghliss32','ghliss111',null,null,null,'Ghliss','Hajer',53377883,'ghlisshajer@gmail.com','feminin','00000','1968-07-6',false,'parent',null,null);
+******************************************************
+
+insert into matiereniveau values ('general',1,0,3);
+insert into matiereniveau values ('general',1,1,4);
+insert into matiereniveau values ('science',2,2,3.5);
+insert into matiereniveau values ('science',2,9,2.5);
+insert into matiereniveau values ('math',3,3,3.5);
+insert into matiereniveau values ('math',3,0,4);
+insert into matiereniveau values ('technique',4,3,4);
+insert into matiereniveau values ('technique',3,0,4);
+
+**********************************************
+insert into seance values('technique',3,'3t1','2020-09-14',0,'08:00','Imran123',0,'09:45','S21',true,null);
+insert into seance values('technique',3,'3t1','2020-09-14',0,'10:00','ansari123',3,'12:00','S7',true,null);
+
+insert into seance values('general',1,'1s1','2020-09-14',0,'10:00','Imran123',3,'12:00','S8',true,null);
+
+insert into seance values('science',2,'2sc1','2020-09-14',0,'08:00','ansari123',3,'10:00','S9',true,null);
+
+************************************
+
+insert into absenceretardeleve values('labidi000','general',1,'1s1','2020-09-14',0,'10:00','A',false);
+insert into absenceretardeleve values('ghliss111','science',2,'2sc1','2020-09-14',0,'08:00','A',false);
+
+*********************************************
+
+insert into message values(0,'Imran123','labidi153','Bonjour , votre fils bavarde pendant le seance , il faut fixer ce probleme','2020-10-1');
+insert into message values(1,'labidi153','Imran123','Bonjour , merci de m informer de ce probleme , je parlerais avec lui inchalah','2020-10-1');
+
+************************************************
+
+insert into recevoir values(0,'labidi153','2021-02-11');
+insert into recevoir values(1,'ghliss32',null);
+
+***********************************
+insert into matieresclasse values('technique',3,'3t1',0,0,'Imran123');
+insert into matieresclasse values('technique',3,'3t1',3,1,'ansari123');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
